@@ -8,7 +8,7 @@ describe("Задание1", function () {
     });
 });
 
-    describe("Задание2", function () {
+describe("Задание2", function () {
     it("задание 2", function () {
         expect(utils.zad2).toBeDefined();
         expect(utils.zad2('Привет,',' Мир')).toEqual('Привет, Мир');
@@ -27,10 +27,20 @@ describe("Задание3", function () {
 });
 
 
-fdescribe("Задание4", function () {
+describe("Задание4", function () {
     it("задание 4", function () {
         expect(utils.zad4).toBeDefined();
         expect(utils.zad4('12345',0)).toEqual('120');
     });
 
 });
+
+describe("Задание5", function () {
+    it("задание 5", function () {
+        expect(utils.zad5).toBeDefined();
+        expect(utils.zad5('{\'Петя\': \'100 руб\', \'Коля\': \'101 руб\'}','Петя')).toEqual('100 руб');
+    });
+
+});
+
+
