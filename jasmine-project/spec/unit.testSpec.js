@@ -30,7 +30,7 @@ describe("Задание3", function () {
 describe("Задание4", function () {
     it("задание 4", function () {
         expect(utils.zad4).toBeDefined();
-        expect(utils.zad4('12345',0)).toEqual('120');
+        expect(utils.zad4('12345',0)).toEqual(120);
     });
 
 });
@@ -38,9 +38,65 @@ describe("Задание4", function () {
 describe("Задание5", function () {
     it("задание 5", function () {
         expect(utils.zad5).toBeDefined();
-        expect(utils.zad5('{\'Петя\': \'100 руб\', \'Коля\': \'101 руб\'}','Петя')).toEqual('100 руб');
+        expect(utils.zad5('Петя')).toEqual('100 руб');
+    });
+
+});
+
+describe("Задание6", function () {
+    it("задание 6", function () {
+        expect(utils.zad6).toBeDefined();
+        expect(utils.zad6(7)).toEqual('воскресенье');
     });
 
 });
 
 
+describe("Задание7", function () {
+    it("задание 7", function () {
+        expect(utils.zad7).toBeDefined();
+        expect(utils.zad7('jQuery')).toEqual('jQuery');
+    });
+
+});
+
+
+describe("Задание8", function () {
+    it("задание 8", function () {
+        expect(utils.zad8).toBeDefined();
+        expect(utils.zad8('surname')).toEqual('Smith');
+    });
+
+});
+
+describe("Задание9", function () {
+    it("задание 9", function () {
+        expect(utils.zad9).toBeDefined();
+        expect(utils.zad9()).toEqual([1, 2, 3, 4, 5]);
+    });
+
+});
+
+describe("Задание10", function () {
+    it("задание 10", function () {
+        expect(utils.zad10).toBeDefined();
+        expect(utils.zad10()).toEqual(4);
+    });
+
+});
+
+describe("Задание11", function () {
+    it("задание 11", function () {
+        expect(utils.zad11).toBeDefined();
+        expect(utils.zad11()).toEqual('Понедельник');
+    });
+
+});
+
+describe("Задание12", function () {
+    it("задание 12", function () {
+        expect(utils.zad11).toBeDefined();
+        expect(utils.zad11()).toEqual('Понедельник');
+    });
+
+});

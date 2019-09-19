@@ -24,74 +24,81 @@ function zad4(num,i) {
 }
 
 //задание 5
-function zad5(obj,i) {
-    return obj[i];
+const obj = {
+    Петя: '100 руб',
+    Коля: '101 руб'
+};
+function zad5(name) {
+    return obj[name];
 }
 
-/* задание 6
+// задание 6
 const daysOfTheWeek = {
-    '1': 'понедельник',
-    '2': 'вторник',
-    '3': 'среда',
-    '4': 'четверг',
-    '5': 'пятница',
-    '6': 'суббота',
-    '7': 'воскресенье'
+    1: 'понедельник',
+    2: 'вторник',
+    3: 'среда',
+    4: 'четверг',
+    5: 'пятница',
+    6: 'суббота',
+    7: 'воскресенье'
 };
-alert(daysOfTheWeek['7']);//текущий день - воскресенье
-let day = 7;
-alert(daysOfTheWeek[day]);//7-ой день - воскресенье
 
-/* задание 7
-const obj = {
+function zad6(day){
+    return daysOfTheWeek[day];
+}
+
+// задание 7
+const objs = {
     js: ['jQuery', 'Angular'], php: 'hello', css: 'world'
 };
-//alert( obj['js'][0]);
-alert(obj['js'] = 'jQuery');
+function zad7(){
+    return objs['jQuery'];
+}
+
 
 //задание 8
-let user = {};// пустой объект user.
+const user = {};// пустой объект user.
 user.name = 'John';//свойство name со значением John
-alert(user.name);//John
 user.surname = 'Smith';//свойство surname со значением Smith
 user.name = ' Pete';//изменено значение свойства name на Pete
-alert(user.name);//Pete
 delete user.name; //удалено свойство name из объекта
+function zad8(surname){
+    return user[surname];
+}
 
 //задание 9
-let arr = [1, 2, 3, 4, 5];
-alert(arr);//первый способ создания массива arr
-
-let arr = [];
-arr[0] = 1;
-arr[1] = 2;
-arr[2] = 3;
-arr[3] = 4;
-arr[4] = 5;
-alert(arr);//второй способ создания массива arr
+function zad9(arr1){
+     arr1 = [1, 2, 3, 4, 5];
+    return arr1;
+}
 
 //задание 10
-let a = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
-alert(a[1][0]); //4
+function zad10(a) {
+    a = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+    return a[1][0];
+}
 
 //задание 11
-const daysOfTheWeek = {
+function zad11() {
+const daysTheWeek = {
     ru: ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье'],
     en: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
 };
-alert(daysOfTheWeek['ru'][0]);//понедельник
-alert(daysOfTheWeek['en'][2]);//Wednesday
+return daysTheWeek['ru'][0];
+}//daysTheWeek['en'][2]
 
-//задание 12
-let a = 1; //=0,=-3
-if (a == 0) {
-    alert('Верно');
-} else {
-    alert('Неверно');
+
+/*задание 12
+function zad12(a) {
+
+if (a == 0)
+    return 'Верно';
+ else {
+    return 'Неверно';
 }
-;
 
-//задание 13
+
+/*задание 13
 let a = 5;//0, -3, 2
 if (a > 0 && a < 5) {
     alert('Верно');
@@ -245,5 +252,11 @@ module.exports = {
     zad2:zad2,
     zad3:zad3,
     zad4:zad4,
-    zad5:zad5
+    zad5:zad5,
+    zad6:zad6,
+    zad7:zad7,
+    zad8:zad8,
+    zad9:zad9,
+    zad10:zad10,
+    zad11:zad11
 };
