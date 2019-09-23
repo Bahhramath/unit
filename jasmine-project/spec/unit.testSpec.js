@@ -95,8 +95,81 @@ describe("Задание11", function () {
 
 describe("Задание12", function () {
     it("задание 12", function () {
-        expect(utils.zad11).toBeDefined();
-        expect(utils.zad11()).toEqual('Понедельник');
+        expect(utils.zad12).toBeDefined();
+        expect(utils.zad12(1)).toEqual('Неверно');
+    });
+
+});
+
+describe("Задание13", function () {
+    it("задание 13", function () {
+        expect(utils.zad13).toBeDefined();
+        expect(utils.zad13(1)).toEqual('Верно');
+    });
+
+});
+
+
+describe("Задание14", function () {
+    it("задание 14", function () {
+        expect(utils.zad14).toBeDefined();
+        expect(utils.zad14(5)).toEqual(0.2);
+    });
+
+});
+
+describe("Задание15", function () {
+    it("задание 15", function () {
+        expect(utils.zad15).toBeDefined();
+        expect(utils.zad15(1)).toEqual('зима');
+    });
+
+});
+
+describe("Задание16", function () {
+    it("задание 16", function () {
+        expect(utils.zad16).toBeDefined();
+        expect(utils.zad16(1)).toEqual('Первая декада');
+    });
+
+});
+
+describe("Задание17", function () {
+    it("задание 17", function () {
+        expect(utils.zad17).toBeDefined();
+        expect(utils.zad17('abcde')).toEqual('да');
+    });
+
+});
+
+describe("Задание18", function () {
+    it("задание 18", function () {
+        expect(utils.zad18).toBeDefined();
+        expect(utils.zad18('12345')).toEqual('да');
+    });
+
+});
+
+describe("Задание19", function () {
+    it("задание 19", function () {
+        expect(utils.zad19).toBeDefined();
+        expect(utils.zad19('465')).toEqual('15');
+    });
+
+});
+
+describe("Задание20", function () {
+    it("задание 20", function () {
+        expect(utils.zad20).toBeDefined();
+        expect(utils.zad20('465123')).toEqual('нет');
+    });
+
+});
+
+describe("Задание21", function () {
+    it("задание 21", function () {
+        expect(utils.zad21).toBeDefined();
+        expect(utils.zad21('465123')).toEqual('нет');
     });
 
 });

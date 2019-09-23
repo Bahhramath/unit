@@ -88,121 +88,123 @@ return daysTheWeek['ru'][0];
 }//daysTheWeek['en'][2]
 
 
-/*задание 12
+//задание 12
 function zad12(a) {
 
-if (a == 0)
-    return 'Верно';
- else {
-    return 'Неверно';
+    if (a == 0)
+        return 'Верно';
+    else {
+        return 'Неверно';
+    }
 }
 
+//задание 13
+    function zad13(a) {
 
-/*задание 13
-let a = 5;//0, -3, 2
-if (a > 0 && a < 5) {
-    alert('Верно');
-} else {
-    alert('Неверно');
-}
-;
-
+        if (a > 0 && a < 5) {
+            return 'Верно';
+        } else {
+            return 'Неверно';
+        }
+    }
 //задание 14
-let a = 5;//0, -3, 2
-if (a === 0 || a === 2) {
-    alert(a + 7);
-} else {
-    alert(a / 10);
+function zad14(a) {
+            if (a === 0 || a === 2) {
+                return(a + 7);
+            } else {
+                return(a / 10);
+            }
 }
-;
 
 //задание 15
-num = 1;
-result = '';
+function zad15(num) {
 
 switch (num) {
     case 1:
-        result = 'зима';
+        return 'зима';
         break;
     case 2:
-        result = 'весна';
+        return 'весна';
         break;
     case 3:
-        result = 'лето';
+        return 'лето';
         break;
     case 4:
-        result = 'осень';
-}
-;
+        return 'осень';
+}}
 
 //задание 16
-let day = 1;//первая декада
-if (day <= 10) {
-    alert('Первая декада');
+function zad16(day) {
+    if (day <= 10) {
+        return 'Первая декада';
+    }
+    if (day > 10 && day <= 20) {
+        return 'Вторая декада';
+    }
+    if (day > 20 && day <= 31) {
+        return 'Третья декада';
+    }
 }
-if (day > 10 && day <= 20) {
-    alert('Вторая декада');
-}
-if (day > 20 && day <= 31) {
-    alert('Третья декада');
-}
-;
 
 //задание 17
-let str = 'abcde';
-if (str[0] == 'a') {
-    alert('да');
-} else {
-    alert('нет');
-}
-;
+    function zad17(str) {
+        if (str[0] == 'a') {
+            return 'да';
+        } else {
+            return 'нет';
+        }
+    }
 
 //задание 18
-let num = '12345';
-if (num[0] == '1' || num[0] == '2' || num[0] == '3') {
-    alert('да');
-} else {
-    alert('нет');
+function zad18(num) {
+    if (num[0] == '1' || num[0] == '2' || num[0] == '3') {
+        return 'да';
+    } else {
+        return 'нет';
+    }
 }
-;
 
 //задание 19
-let num = '465';
-let sum = Number(num[0]) + Number(num[1]) + Number(num[2]);
-alert(sum);
+function zad19(num) {
+    const sum = Number(num[0]) + Number(num[1]) + Number(num[2]);
+    return sum;
+}
+
 
 //задание 20
-let num = '465123';
-let sum1 = Number(num[0]) + Number(num[1]) + Number(num[2]);
-let sum2 = Number(num[3]) + Number(num[4]) + Number(num[5])
-if (sum1 == sum2) {
-    alert('да');
-} else {
-    alert('нет')
+function zad20(num) {
+    const sum1 = Number(num[0]) + Number(num[1]) + Number(num[2]);
+    const sum2 = Number(num[3]) + Number(num[4]) + Number(num[5])
+    if (sum1 == sum2) {
+        return 'да';
+    } else {
+        return 'нет'
+    }
 }
-;
 
 //задание 21
 let i = 1;
-while (i <= 100) {
-    alert(i);
-    i++;
-}
-;
+function zad21(i) {
 
-for (i = 1; i <= 100; i++) {
-    alert(i);
-}
-;
+    while (i <= 100) {
+        return i;
+        i++;
+    }
+    ;
 
-//задание 22
+    for (i = 1; i <= 100; i++) {
+        return i;
+    }
+}
+
+/*задание 22
 let sum = 0;
 for (let i = 1; i <= 100; i++) {
     sum += i;
 }
 ;
 
-//задание 23
+задание 23
 let arr = [1, 2, 5, 9, 4, 13, 4, 10];
 for (let i = 0; i < arr.length; i++) {
     if (arr[i] == 4) {
@@ -258,5 +260,15 @@ module.exports = {
     zad8:zad8,
     zad9:zad9,
     zad10:zad10,
-    zad11:zad11
+    zad11:zad11,
+    zad12:zad12,
+    zad13:zad13,
+    zad14:zad14,
+    zad15:zad15,
+    zad16:zad16,
+    zad17:zad17,
+    zad18:zad18,
+    zad19:zad19,
+    zad20:zad20,
+    zad21:zad21
 };
