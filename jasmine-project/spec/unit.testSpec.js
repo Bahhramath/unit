@@ -55,7 +55,7 @@ describe("Задание6", function () {
 describe("Задание7", function () {
     it("задание 7", function () {
         expect(utils.zad7).toBeDefined();
-        expect(utils.zad7('jQuery')).toEqual('jQuery');
+        expect(utils.zad7({js: ['jQuery', 'Angular'], php: 'hello', css: 'world'})).toEqual('jQuery');
     });
 
 });
@@ -113,7 +113,7 @@ describe("Задание13", function () {
 describe("Задание14", function () {
     it("задание 14", function () {
         expect(utils.zad14).toBeDefined();
-        expect(utils.zad14(5)).toEqual(0.2);
+        expect(utils.zad14(5)).toEqual(0.5);
     });
 
 });
@@ -153,7 +153,7 @@ describe("Задание18", function () {
 describe("Задание19", function () {
     it("задание 19", function () {
         expect(utils.zad19).toBeDefined();
-        expect(utils.zad19('465')).toEqual('15');
+        expect(utils.zad19('465')).toEqual(15);
     });
 
 });
@@ -169,7 +169,48 @@ describe("Задание20", function () {
 describe("Задание21", function () {
     it("задание 21", function () {
         expect(utils.zad21).toBeDefined();
-        expect(utils.zad21('465123')).toEqual('нет');
+        expect(utils.zad21('1')).toEqual('1');
+    });
+
+});
+
+describe("Задание22", function () {
+    it("задание 22", function () {
+        expect(utils.zad22).toBeDefined();
+        expect(utils.zad22('100')).toEqual(5050);
+    });
+
+});
+
+describe("Задание23", function () {
+    it("задание 23", function () {
+        expect(utils.zad23).toBeDefined();
+        expect(utils.zad23([1, 2, 5, 9, 4, 13, 4, 10])).toEqual('Есть!');
+    });
+
+});
+
+describe("Задание24", function () {
+    it("задание 24", function () {
+        expect(utils.zad24).toBeDefined();
+        expect(utils.zad24([2, 5, 9, 15, 0, 4])).toEqual(5);
+    });
+
+});
+
+describe("Задание25", function () {
+    it("задание 25", function () {
+        expect(utils.zad25).toBeDefined();
+        expect(utils.zad25({green: 'зеленый', red: 'красный', blue: 'голубой'})).toEqual('green');
+        expect(utils.zad_25({green: 'зеленый', red: 'красный', blue: 'голубой'})).toEqual('зеленый');
+    });
+
+});
+
+describe("Задание26", function () {
+    it("задание 26", function () {
+        expect(utils.zad26).toBeDefined();
+        expect(utils.zad26({Коля: '200', Вася: '300', Петя: '400'})).toEqual('Коля - зарплата 200 долларов');
     });
 
 });

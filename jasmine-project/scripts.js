@@ -48,11 +48,8 @@ function zad6(day){
 }
 
 // задание 7
-const objs = {
-    js: ['jQuery', 'Angular'], php: 'hello', css: 'world'
-};
-function zad7(){
-    return objs['jQuery'];
+function zad7(obj){
+    return obj['js'] = 'jQuery';
 }
 
 
@@ -183,7 +180,6 @@ function zad20(num) {
 }
 
 //задание 21
-let i = 1;
 function zad21(i) {
 
     while (i <= 100) {
@@ -197,56 +193,54 @@ function zad21(i) {
     }
 }
 
-/*задание 22
-let sum = 0;
-for (let i = 1; i <= 100; i++) {
-    sum += i;
+//задание 22
+function zad22(n){
+    let sum = 0;
+    for(i = 0; i <= n; i++){
+        sum += i;
+    }
+    return sum;
 }
-;
 
-задание 23
-let arr = [1, 2, 5, 9, 4, 13, 4, 10];
+
+//задание 23
+function zad23(arr) {
+
 for (let i = 0; i < arr.length; i++) {
     if (arr[i] == 4) {
-        alert('Есть!');
+        return 'Есть!';
         break;
     }
-}
+}}
 
 //задание 24
-const arr = [
-    2, 5, 9, 15, 0, 4
-];
+function zad24(arr) {
 
 for (let i = 0; i < arr.length; i++) {
     if (arr[i] > 3 && arr[i] < 10) {
-        console.log(arr[i]);
+        return arr[i];
     }
-}
-;
+}}
 
 // задание 25
-let obj = {
-    green: 'зеленый', red: 'красный', blue: 'голубой'
-};
+function zad25(obj) {
 
 for (let key in obj) {
-    alert(key);
-    alert(obj[key]);
-}
-;
+    return (key);
+
+}}
+
+function zad_25(obj) {
+
+    for (let key in obj) {
+        return(obj[key]);
+    }}
 
 // задание 26
-const obj = {
-    Коля: '200',
-    Вася: '300',
-    Петя: '400'
-};
-
-for (let key in obj) {
-    alert(key + ' - зарплата ' + obj[key] + ' долларов');
-}
-;*/
+function zad26(obj) {
+    for (let key in obj) {
+    return key + ' - зарплата ' + obj[key] + ' долларов';
+}}
 
 
 module.exports = {
@@ -270,5 +264,11 @@ module.exports = {
     zad18:zad18,
     zad19:zad19,
     zad20:zad20,
-    zad21:zad21
+    zad21:zad21,
+    zad22:zad22,
+    zad23:zad23,
+    zad24:zad24,
+    zad25:zad25,
+    zad_25:zad_25,
+    zad26:zad26
 };
