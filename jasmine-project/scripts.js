@@ -25,7 +25,8 @@ function zad3(i) {
 
 //задание 4
 function zad4() {
-    num = '12345'
+    let num = '12345'
+
     return num[0] * num[1] * num[2] * num[3] * num[4];
 }
 
