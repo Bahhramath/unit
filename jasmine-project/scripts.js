@@ -1,26 +1,32 @@
 //задние 1
 function zad1(a, b) {
-    c = a - b;
-    let d;
-    d = 7;
-    result=c+d;
+    const c = a - b;
+    let d = 7;
+    result = c + d;
+
     return result;
 }
 
 
 //задание 2
-function zad2(str1, str2) {
+function zad2() {
+    let str1 = 'Привет,';
+    let str2 = ' Мир!';
+
     return str1 + str2
 };
 
 //задание 3
-function zad3(str, i) {
-  return str[i];
+function zad3(i) {
+    let str = 'abcde';
+
+    return str[i];
 }
 
 //задание 4
-function zad4(num,i) {
-    return num[i] * num[i+1] * num[i+2] * num[i+3] * num[i+4];
+function zad4() {
+    num = '12345'
+    return num[0] * num[1] * num[2] * num[3] * num[4];
 }
 
 //задание 5
@@ -28,6 +34,7 @@ const obj = {
     Петя: '100 руб',
     Коля: '101 руб'
 };
+
 function zad5(name) {
     return obj[name];
 }
@@ -43,32 +50,33 @@ const daysOfTheWeek = {
     7: 'воскресенье'
 };
 
-function zad6(day){
+function zad6(day) {
     return daysOfTheWeek[day];
 }
 
 // задание 7
-function zad7(obj){
+function zad7(obj) {
     return obj['js'][0];
 }
 
 
 //задание 8
-function zad8(){
-const user = {};// пустой объект user.
-user.name = 'John';//свойство name со значением John
-user.surname = 'Smith';//свойство surname со значением Smith
-user.name = ' Pete';//изменено значение свойства name на Pete
-delete user.name; //удалено свойство name из объекта
+function zad8() {
+    const user = {};// пустой объект user.
+    user.name = 'John';//свойство name со значением John
+    user.surname = 'Smith';//свойство surname со значением Smith
+    user.name = ' Pete';//изменено значение свойства name на Pete
+    delete user.name; //удалено свойство name из объекта
     return user;
 }
 
 //задание 9
-function zad9(arr1){
-     arr1 = [1, 2, 3, 4, 5];
+function zad9(arr1) {
+    arr1 = [1, 2, 3, 4, 5];
     return arr1;
 }
-function zad9_1(arr2){
+
+function zad9_1(arr2) {
     arr2 = [];
     arr2[0] = 1;
     arr2[1] = 2;
@@ -90,8 +98,9 @@ const daysTheWeek = {
     ru: ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье'],
     en: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
 };
+
 function zad11() {
-return daysTheWeek['ru'][0];
+    return daysTheWeek['ru'][0];
 }//daysTheWeek['en'][2]
 
 
@@ -106,42 +115,44 @@ function zad12(a) {
 }
 
 //задание 13
-    function zad13(a) {
+function zad13(a) {
 
-        if (a > 0 && a < 5) {
-            return 'Верно';
-        } else {
-            return 'Неверно';
-        }
+    if (a > 0 && a < 5) {
+        return 'Верно';
+    } else {
+        return 'Неверно';
     }
+}
+
 //задание 14
 function zad14(a) {
-            if (a === 0 || a === 2) {
-                return(a + 7);
-            } else {
-                return(a / 10);
-            }
+    if (a === 0 || a === 2) {
+        return (a + 7);
+    } else {
+        return (a / 10);
+    }
 }
 
 //задание 15
 function zad15(num) {
 
-switch (num) {
-    case 1:
-        return 'зима';
-        break;
-    case 2:
-        return 'весна';
-        break;
-    case 3:
-        return 'лето';
-        break;
-    case 4:
-        return 'осень';
-        break;
-    default:
-        return "Нет таких значений";
-}}
+    switch (num) {
+        case 1:
+            return 'зима';
+            break;
+        case 2:
+            return 'весна';
+            break;
+        case 3:
+            return 'лето';
+            break;
+        case 4:
+            return 'осень';
+            break;
+        default:
+            return "Нет таких значений";
+    }
+}
 
 //задание 16
 function zad16(day) {
@@ -157,13 +168,13 @@ function zad16(day) {
 }
 
 //задание 17
-    function zad17(str) {
-        if (str[0] == 'a') {
-            return 'да';
-        } else {
-            return 'нет';
-        }
+function zad17(str) {
+    if (str[0] == 'a') {
+        return 'да';
+    } else {
+        return 'нет';
     }
+}
 
 //задание 18
 function zad18(num) {
@@ -199,16 +210,17 @@ function zad21(i) {
         i++;
     }
 }
-function zad21_1(i){
-   for (i = 1; i <= 100; i++) {
+
+function zad21_1(i) {
+    for (i = 1; i <= 100; i++) {
         return i;
     }
 }
 
 //задание 22
-function zad22(n){
+function zad22(n) {
     let sum = 0;
-    for(i = 0; i <= n; i++){
+    for (i = 0; i <= n; i++) {
         sum += i;
     }
     return sum;
@@ -218,71 +230,76 @@ function zad22(n){
 //задание 23
 function zad23(arr) {
 
-for (let i = 0; i < arr.length; i++) {
-    if (arr[i] == 4) {
-        return 'Есть!';
-        break;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] == 4) {
+            return 'Есть!';
+            break;
+        }
     }
-}}
+}
 
 //задание 24
 function zad24(arr) {
 
-for (let i = 0; i < arr.length; i++) {
-    if (arr[i] > 3 && arr[i] < 10) {
-        return arr[i];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > 3 && arr[i] < 10) {
+            return arr[i];
+        }
     }
-}}
+}
 
 // задание 25
 function zad25(obj) {
 
-for (let key in obj) {
-    return (key);
+    for (let key in obj) {
+        return (key);
 
-}}
+    }
+}
 
 function zad_25(obj) {
 
     for (let key in obj) {
-        return(obj[key]);
-    }}
+        return (obj[key]);
+    }
+}
 
 // задание 26
 function zad26(obj) {
     for (let key in obj) {
-    return key + ' - зарплата ' + obj[key] + ' долларов';
-}}
+        return key + ' - зарплата ' + obj[key] + ' долларов';
+    }
+}
 
 
 module.exports = {
-    zad1:zad1,
-    zad2:zad2,
-    zad3:zad3,
-    zad4:zad4,
-    zad5:zad5,
-    zad6:zad6,
-    zad7:zad7,
-    zad8:zad8,
-    zad9:zad9,
-    zad9_1:zad9_1,
-    zad10:zad10,
-    zad11:zad11,
-    zad12:zad12,
-    zad13:zad13,
-    zad14:zad14,
-    zad15:zad15,
-    zad16:zad16,
-    zad17:zad17,
-    zad18:zad18,
-    zad19:zad19,
-    zad20:zad20,
-    zad21:zad21,
-    zad21_1:zad21_1,
-    zad22:zad22,
-    zad23:zad23,
-    zad24:zad24,
-    zad25:zad25,
-    zad_25:zad_25,
-    zad26:zad26
+    zad1: zad1,
+    zad2: zad2,
+    zad3: zad3,
+    zad4: zad4,
+    zad5: zad5,
+    zad6: zad6,
+    zad7: zad7,
+    zad8: zad8,
+    zad9: zad9,
+    zad9_1: zad9_1,
+    zad10: zad10,
+    zad11: zad11,
+    zad12: zad12,
+    zad13: zad13,
+    zad14: zad14,
+    zad15: zad15,
+    zad16: zad16,
+    zad17: zad17,
+    zad18: zad18,
+    zad19: zad19,
+    zad20: zad20,
+    zad21: zad21,
+    zad21_1: zad21_1,
+    zad22: zad22,
+    zad23: zad23,
+    zad24: zad24,
+    zad25: zad25,
+    zad_25: zad_25,
+    zad26: zad26
 };
