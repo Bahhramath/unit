@@ -3,7 +3,8 @@ function zad1(a, b) {
     c = a - b;
     let d;
     d = 7;
-    return c + d;
+    result=c+d;
+    return result;
 }
 
 
@@ -13,7 +14,6 @@ function zad2(str1, str2) {
 };
 
 //задание 3
-
 function zad3(str, i) {
   return str[i];
 }
@@ -49,18 +49,18 @@ function zad6(day){
 
 // задание 7
 function zad7(obj){
-    return obj['js'] = 'jQuery';
+    return obj['js'][0];
 }
 
 
 //задание 8
+function zad8(){
 const user = {};// пустой объект user.
 user.name = 'John';//свойство name со значением John
 user.surname = 'Smith';//свойство surname со значением Smith
 user.name = ' Pete';//изменено значение свойства name на Pete
 delete user.name; //удалено свойство name из объекта
-function zad8(surname){
-    return user[surname];
+    return user;
 }
 
 //задание 9
@@ -68,6 +68,16 @@ function zad9(arr1){
      arr1 = [1, 2, 3, 4, 5];
     return arr1;
 }
+function zad9_1(arr2){
+    arr2 = [];
+    arr2[0] = 1;
+    arr2[1] = 2;
+    arr2[2] = 3;
+    arr2[3] = 4;
+    arr2[4] = 5;
+    return arr2;
+}
+
 
 //задание 10
 function zad10(a) {
@@ -76,11 +86,11 @@ function zad10(a) {
 }
 
 //задание 11
-function zad11() {
 const daysTheWeek = {
     ru: ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье'],
     en: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
 };
+function zad11() {
 return daysTheWeek['ru'][0];
 }//daysTheWeek['en'][2]
 
@@ -128,6 +138,9 @@ switch (num) {
         break;
     case 4:
         return 'осень';
+        break;
+    default:
+        return "Нет таких значений";
 }}
 
 //задание 16
@@ -181,14 +194,13 @@ function zad20(num) {
 
 //задание 21
 function zad21(i) {
-
     while (i <= 100) {
         return i;
         i++;
     }
-    ;
-
-    for (i = 1; i <= 100; i++) {
+}
+function zad21_1(i){
+   for (i = 1; i <= 100; i++) {
         return i;
     }
 }
@@ -253,6 +265,7 @@ module.exports = {
     zad7:zad7,
     zad8:zad8,
     zad9:zad9,
+    zad9_1:zad9_1,
     zad10:zad10,
     zad11:zad11,
     zad12:zad12,
@@ -265,6 +278,7 @@ module.exports = {
     zad19:zad19,
     zad20:zad20,
     zad21:zad21,
+    zad21_1:zad21_1,
     zad22:zad22,
     zad23:zad23,
     zad24:zad24,

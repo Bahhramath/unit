@@ -64,7 +64,7 @@ describe("Задание7", function () {
 describe("Задание8", function () {
     it("задание 8", function () {
         expect(utils.zad8).toBeDefined();
-        expect(utils.zad8('surname')).toEqual('Smith');
+        expect(utils.zad8()).toEqual(Object({ surname: 'Smith' }));
     });
 
 });
@@ -73,6 +73,7 @@ describe("Задание9", function () {
     it("задание 9", function () {
         expect(utils.zad9).toBeDefined();
         expect(utils.zad9()).toEqual([1, 2, 3, 4, 5]);
+        expect(utils.zad9_1()).toEqual([1, 2, 3, 4, 5]);
     });
 
 });
@@ -93,7 +94,7 @@ describe("Задание11", function () {
 
 });
 
-describe("Задание12", function () {
+fdescribe("Задание12", function () {
     it("задание 12", function () {
         expect(utils.zad12).toBeDefined();
         expect(utils.zad12(1)).toEqual('Неверно');
@@ -121,7 +122,7 @@ describe("Задание14", function () {
 describe("Задание15", function () {
     it("задание 15", function () {
         expect(utils.zad15).toBeDefined();
-        expect(utils.zad15(1)).toEqual('зима');
+        expect(utils.zad15(43)).toEqual('Нет таких значений');
     });
 
 });
@@ -169,7 +170,8 @@ describe("Задание20", function () {
 describe("Задание21", function () {
     it("задание 21", function () {
         expect(utils.zad21).toBeDefined();
-        expect(utils.zad21('1')).toEqual('1');
+        expect(utils.zad21(1)).toEqual(1);
+        expect(utils.zad21_1(1)).toEqual(1);
     });
 
 });
