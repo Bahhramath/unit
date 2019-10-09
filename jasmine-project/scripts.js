@@ -37,6 +37,7 @@ const obj = {
 };
 
 function zad5(name) {
+
     return obj[name];
 }
 
@@ -52,11 +53,13 @@ const daysOfTheWeek = {
 };
 
 function zad6(day) {
+
     return daysOfTheWeek[day];
 }
 
 // задание 7
 function zad7(obj) {
+
     return obj['js'][0];
 }
 
@@ -74,6 +77,7 @@ function zad8() {
 //задание 9
 function zad9(arr1) {
     arr1 = [1, 2, 3, 4, 5];
+
     return arr1;
 }
 
@@ -84,6 +88,7 @@ function zad9_1(arr2) {
     arr2[2] = 3;
     arr2[3] = 4;
     arr2[4] = 5;
+
     return arr2;
 }
 
@@ -91,6 +96,7 @@ function zad9_1(arr2) {
 //задание 10
 function zad10(a) {
     a = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+
     return a[1][0];
 }
 
@@ -101,6 +107,7 @@ const daysTheWeek = {
 };
 
 function zad11() {
+
     return daysTheWeek['ru'][0];
 }//daysTheWeek['en'][2]
 
@@ -109,8 +116,10 @@ function zad11() {
 function zad12(a) {
 
     if (a == 0)
+
         return 'Верно';
     else {
+
         return 'Неверно';
     }
 }
@@ -119,8 +128,10 @@ function zad12(a) {
 function zad13(a) {
 
     if (a > 0 && a < 5) {
+
         return 'Верно';
     } else {
+
         return 'Неверно';
     }
 }
@@ -128,8 +139,10 @@ function zad13(a) {
 //задание 14
 function zad14(a) {
     if (a === 0 || a === 2) {
+
         return (a + 7);
     } else {
+
         return (a / 10);
     }
 }
@@ -139,18 +152,23 @@ function zad15(num) {
 
     switch (num) {
         case 1:
+
             return 'зима';
             break;
         case 2:
+
             return 'весна';
             break;
         case 3:
+
             return 'лето';
             break;
         case 4:
+
             return 'осень';
             break;
         default:
+
             return "Нет таких значений";
     }
 }
@@ -158,12 +176,15 @@ function zad15(num) {
 //задание 16
 function zad16(day) {
     if (day <= 10) {
+
         return 'Первая декада';
     }
     if (day > 10 && day <= 20) {
+
         return 'Вторая декада';
     }
     if (day > 20 && day <= 31) {
+
         return 'Третья декада';
     }
 }
@@ -171,8 +192,10 @@ function zad16(day) {
 //задание 17
 function zad17(str) {
     if (str[0] == 'a') {
+
         return 'да';
     } else {
+
         return 'нет';
     }
 }
@@ -180,8 +203,10 @@ function zad17(str) {
 //задание 18
 function zad18(num) {
     if (num[0] == '1' || num[0] == '2' || num[0] == '3') {
+
         return 'да';
     } else {
+
         return 'нет';
     }
 }
@@ -189,6 +214,7 @@ function zad18(num) {
 //задание 19
 function zad19(num) {
     const sum = Number(num[0]) + Number(num[1]) + Number(num[2]);
+
     return sum;
 }
 
@@ -198,8 +224,10 @@ function zad20(num) {
     const sum1 = Number(num[0]) + Number(num[1]) + Number(num[2]);
     const sum2 = Number(num[3]) + Number(num[4]) + Number(num[5])
     if (sum1 == sum2) {
+
         return 'да';
     } else {
+
         return 'нет'
     }
 }
@@ -207,6 +235,7 @@ function zad20(num) {
 //задание 21
 function zad21(i) {
     while (i <= 100) {
+
         return i;
         i++;
     }
@@ -214,6 +243,7 @@ function zad21(i) {
 
 function zad21_1(i) {
     for (i = 1; i <= 100; i++) {
+
         return i;
     }
 }
@@ -224,6 +254,7 @@ function zad22(n) {
     for (i = 0; i <= n; i++) {
         sum += i;
     }
+
     return sum;
 }
 
@@ -233,6 +264,7 @@ function zad23(arr) {
 
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] == 4) {
+
             return 'Есть!';
             break;
         }
@@ -244,6 +276,7 @@ function zad24(arr) {
 
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] > 3 && arr[i] < 10) {
+
             return arr[i];
         }
     }
@@ -253,6 +286,7 @@ function zad24(arr) {
 function zad25(obj) {
 
     for (let key in obj) {
+
         return (key);
 
     }
@@ -261,6 +295,7 @@ function zad25(obj) {
 function zad_25(obj) {
 
     for (let key in obj) {
+
         return (obj[key]);
     }
 }
@@ -268,6 +303,7 @@ function zad_25(obj) {
 // задание 26
 function zad26(obj) {
     for (let key in obj) {
+
         return key + ' - зарплата ' + obj[key] + ' долларов';
     }
 }

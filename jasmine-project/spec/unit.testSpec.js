@@ -26,7 +26,7 @@ describe("Задание3", function () {
 });
 
 
-fdescribe("Задание4", function () {
+describe("Задание4", function () {
     it("задание 4", function () {
         expect(utils.zad4).toBeDefined();
         expect(utils.zad4()).toEqual(120);
@@ -93,7 +93,7 @@ describe("Задание11", function () {
 
 });
 
-fdescribe("Задание12", function () {
+describe("Задание12", function () {
     it("задание 12", function () {
         expect(utils.zad12).toBeDefined();
         expect(utils.zad12(1)).toEqual('Неверно');
