@@ -234,18 +234,22 @@ function zad20(num) {
 
 //задание 21
 function zad21(i) {
-    while (i <= 100) {
+    while (i <= 99) {
 
-        return i;
         i++;
+        console.log('i='+i)
+
     }
+    return --i;
 }
 
 function zad21_1(i) {
-    for (i = 1; i <= 100; i++) {
+    for (i = 1; i <= 100; ++i) {
 
-        return i;
+        console.log('i='+i)
+
     }
+    return --i;
 }
 
 //задание 22
@@ -265,10 +269,11 @@ function zad23(arr) {
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] == 4) {
 
-            return 'Есть!';
+
             break;
         }
     }
+    return 'Есть!';
 }
 
 //задание 24
@@ -280,6 +285,7 @@ function zad24(arr) {
             return arr[i];
         }
     }
+
 }
 
 // задание 25
@@ -290,6 +296,7 @@ function zad25(obj) {
         return (key);
 
     }
+
 }
 
 function zad_25(obj) {
@@ -298,6 +305,7 @@ function zad_25(obj) {
 
         return (obj[key]);
     }
+
 }
 
 // задание 26

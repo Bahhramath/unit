@@ -169,8 +169,8 @@ describe("Задание20", function () {
 describe("Задание21", function () {
     it("задание 21", function () {
         expect(utils.zad21).toBeDefined();
-        expect(utils.zad21(1)).toEqual(1);
-        expect(utils.zad21_1(1)).toEqual(1);
+        expect(utils.zad21(0)).toEqual(99);
+        expect(utils.zad21_1(0)).toEqual(100);
     });
 
 });
